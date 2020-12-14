@@ -8,5 +8,11 @@ public class Bullet : MonoBehaviour
     {
         gameObject.SetActive(false);
         _gun.AddToPool(this);
+
+        var enemy = collision.gameObject.GetComponent<Enemy>();
+        if(enemy)
+        {
+            enemy.TakeDamage(collision.contacts[0].point);
+        }
     }
 } 

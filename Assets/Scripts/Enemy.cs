@@ -1,18 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.AI;
 
+[RequireComponent(typeof(NavMeshAgent))]
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] GameObject _hitPrefab;
+    [SerializeField] GameObject _explosionPrefab;
+    [SerializeField] int _health = 3;
+    private Player _player;
+    private NavMeshAgent _navMeshAgent;
+    private int _currentHealth;
+
+    private void OnEnable()
     {
-        
+        _currentHealth = _health;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        _player = FindObjectOfType<Player>();
+        _navMeshAgent = GetComponent<NavMeshAgent>();
+    }
+
+    public void TakeDamage(Vector3 impactPoint)
+    {
+        Instantiate(_hitPrefab, impactPoint, transform.rotation);
+        _currentHealth--;
+        if(_currentHealth <= 0)
+        {
+            Instantiate(_explosionPrefab, impactPoint, transform.rotation);
+            gameObject.SetActive(false);
+        }
+    }
+
+    private void Update()
+    {
+        _navMeshAgent.SetDestination(_player.transform.position);
     }
 }
