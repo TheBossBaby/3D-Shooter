@@ -2126,7 +2126,7 @@ GameObject:
   - component: {fileID: 9121560385088561723}
   - component: {fileID: 9121560385088561722}
   m_Layer: 0
-  m_Name: Robot
+  m_Name: White Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2203,7 +2203,8 @@ MonoBehaviour:
     type: 3}
   _explosionPrefab: {fileID: 3127518039995960191, guid: a01f0a98f04bf7e47a0940b8319b0c45,
     type: 3}
-  _health: 3
+  _health: 1
+  _rewardPoint: 100
 --- !u!195 &9121560385088561722
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2214,7 +2215,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 1.8
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

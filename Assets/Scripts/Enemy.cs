@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class Enemy : MonoBehaviour
@@ -7,6 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject _hitPrefab;
     [SerializeField] GameObject _explosionPrefab;
     [SerializeField] int _health = 3;
+    [SerializeField] int _rewardPoint;
     private Player _player;
     private NavMeshAgent _navMeshAgent;
     private int _currentHealth;
@@ -29,6 +31,7 @@ public class Enemy : MonoBehaviour
         if(_currentHealth <= 0)
         {
             Instantiate(_explosionPrefab, impactPoint, transform.rotation);
+            ScoreSystem.AddPoint(_rewardPoint);
             gameObject.SetActive(false);
         }
     }
@@ -36,5 +39,15 @@ public class Enemy : MonoBehaviour
     private void Update()
     {
         _navMeshAgent.SetDestination(_player.transform.position);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        var player = collision.gameObject.GetComponent<Player>();
+        if(player)
+        {
+            // Create Gameover
+            SceneManager.LoadScene(0);
+        }
     }
 }
