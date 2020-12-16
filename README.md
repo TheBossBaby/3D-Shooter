@@ -6,3 +6,4 @@
 2. [Cartoon FX Free](https://assetstore.unity.com/packages/vfx/particles/cartoon-fx-free-109565)
 3. [Robot Soldier](https://assetstore.unity.com/packages/3d/characters/robots/robot-soldier-142438)
 4. [Toony Tiny City Demo](https://assetstore.unity.com/packages/3d/environments/urban/toony-tiny-city-demo-176087)
+5. [FREE Casual Game SFX Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116)
