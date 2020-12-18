@@ -11,6 +11,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private float _bulletSpeed;
     private Camera _camera;
     private Queue<Bullet> _pool = new Queue<Bullet>();
+    public float GetBulletSpeed => _bulletSpeed;
 
     private void Start()
     {
