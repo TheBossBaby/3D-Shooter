@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
@@ -16,6 +17,7 @@ public class Enemy : MonoBehaviour
     private NavMeshAgent _navMeshAgent;
     private int _currentHealth;
     private AudioSource _audioSource;
+    private Spawner _spawner;
 
     private void OnEnable()
     {
@@ -42,12 +44,18 @@ public class Enemy : MonoBehaviour
             _audioSource?.Play();
             ScoreSystem.AddPoint(_rewardPoint);
             gameObject.SetActive(false);
+            _spawner.AddToPool(this);
         }
     }
 
     private void Update()
     {
         _navMeshAgent.SetDestination(_player.transform.position);
+    }
+
+    internal void SetSpawner(Spawner spawner)
+    {
+        _spawner = spawner;
     }
 
     private void OnCollisionEnter(Collision collision)
