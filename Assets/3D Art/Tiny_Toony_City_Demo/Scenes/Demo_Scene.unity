@@ -11066,6 +11066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 6954495204110518104, guid: d2e11c60e6161b54992055762204fa38,
     type: 3}
+  _polledBulletPrefab: {fileID: 0}
   _shootPoint: {fileID: 848299796}
   _delay: 0.2
   _bulletSpeed: 13

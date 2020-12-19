@@ -5,6 +5,7 @@ public class Gun : MonoBehaviour
 {
     private float _nextShootTime;
     [SerializeField] private Bullet _bulletPrefab;
+    [SerializeField] private PoolableBullet _polledBulletPrefab;
     [SerializeField] private Transform _shootPoint;
     [SerializeField] private float _delay = 0.2f;
     private Vector3 _direction;
@@ -35,7 +36,9 @@ public class Gun : MonoBehaviour
     private void Shoot()
     {
         _nextShootTime += _delay;
-        var _bullet = GetBullet();
+        //var _bullet = GetBullet();
+        var _bullet = _polledBulletPrefab.Get<PoolableBullet>();
+        _bullet.SetGun(this);
         _bullet.transform.position = _shootPoint.position;
         _bullet.transform.rotation = _shootPoint.rotation;
         _bullet.GetComponent<Rigidbody>().velocity = _direction * _bulletSpeed;
