@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] float _delay;
     [SerializeField] Transform[] _spwanPoints;
     [SerializeField] Enemy[] _enemies;
+    [SerializeField] PoolableEnemy[] _poolableEnemies;
     private Queue<Enemy> _enemyPool = new Queue<Enemy>();
 
     void Update()
@@ -19,10 +20,12 @@ public class Spawner : MonoBehaviour
     {
         _nextSpwanTime = Time.time + _delay;
         Transform spwanPoint = GetSpawnPoint();
-        Enemy enemy = GetEnemy();
-        var e = GetEnemy(enemy, spwanPoint);
-        e.transform.position = spwanPoint.position;
-        e.transform.rotation = spwanPoint.rotation;
+        //Enemy enemy = GetEnemy();
+        PoolableEnemy poolableEnemy = GetPoolableEnemy();
+        var pe = poolableEnemy.Get<PoolableEnemy>(spwanPoint.position, spwanPoint.rotation);
+        //var e = GetEnemy(enemy, spwanPoint);
+        //e.transform.position = spwanPoint.position;
+        //e.transform.rotation = spwanPoint.rotation;
         //Instantiate(enemy, spwanPoint.position, spwanPoint.rotation);
     }
 
@@ -37,6 +40,13 @@ public class Spawner : MonoBehaviour
     {
         var randomIndex = UnityEngine.Random.Range(0, _enemies.Length);
         var enemy = _enemies[randomIndex];
+        return enemy;
+    }
+
+    private PoolableEnemy GetPoolableEnemy()
+    {
+        var randomIndex = UnityEngine.Random.Range(0, _enemies.Length);
+        var enemy = _poolableEnemies[randomIndex];
         return enemy;
     }
 

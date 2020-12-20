@@ -2127,6 +2127,7 @@ GameObject:
   - component: {fileID: 9121560385088561722}
   - component: {fileID: 4260860525790446891}
   - component: {fileID: -2580431713281211155}
+  - component: {fileID: 7591699064765325249}
   m_Layer: 0
   m_Name: White Robot
   m_TagString: Untagged
@@ -2196,7 +2197,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9120757216581903644}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e766fa9ea9ac49c4fb418b8ea6d0eed7, type: 3}
   m_Name: 
@@ -2343,6 +2344,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7591699064765325249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9120757216581903644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d30c383993eadec4da25a8e7241778d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialPoolSize: 10
+  _hitPrefab: {fileID: 1779838342869933408, guid: 78d13a1a7cdfbac42b32c006e088e15a,
+    type: 3}
+  _explosionPrefab: {fileID: 3127518039995960191, guid: a01f0a98f04bf7e47a0940b8319b0c45,
+    type: 3}
+  _hitSfx: {fileID: 8300000, guid: 72127805eb2bc4e7fbf2e02eca266cfa, type: 3}
+  _explosionSfx: {fileID: 8300000, guid: 0c008ee3ee72a4362a35be25fa5de043, type: 3}
+  _health: 3
+  _rewardPoint: 10
 --- !u!1 &9120757688701296514
 GameObject:
   m_ObjectHideFlags: 0

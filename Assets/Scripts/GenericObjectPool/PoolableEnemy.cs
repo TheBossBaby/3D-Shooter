@@ -1,11 +1,12 @@
-﻿using System;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(AudioSource))]
-public class Enemy : MonoBehaviour
+public class PoolableEnemy : PooledMonobehaviour
 {
     [SerializeField] GameObject _hitPrefab;
     [SerializeField] GameObject _explosionPrefab;
@@ -37,14 +38,13 @@ public class Enemy : MonoBehaviour
         _audioSource.clip = _hitSfx;
         _audioSource?.Play();
         _currentHealth--;
-        if(_currentHealth <= 0)
+        if (_currentHealth <= 0)
         {
             Instantiate(_explosionPrefab, impactPoint, transform.rotation);
             _audioSource.clip = _explosionSfx;
             _audioSource?.Play();
             ScoreSystem.AddPoint(_rewardPoint);
             gameObject.SetActive(false);
-            _spawner?.AddToPool(this);
         }
     }
 
@@ -61,7 +61,7 @@ public class Enemy : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         var player = collision.gameObject.GetComponent<Player>();
-        if(player)
+        if (player)
         {
             // Create Gameover
             SceneManager.LoadScene(0);

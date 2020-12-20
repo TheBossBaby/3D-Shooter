@@ -177,7 +177,7 @@ GameObject:
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &12132612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +201,7 @@ MonoBehaviour:
   - {fileID: 1176876878810693700, guid: 9129886aee437c8409825d90ced4220d, type: 3}
   - {fileID: 3008354251110331474, guid: e448d7d56132294478859cdd950460f0, type: 3}
   - {fileID: 9121560385088561723, guid: 4949d8a27dde13244b07953052ac62e6, type: 3}
+  _poolableEnemies: []
 --- !u!4 &12132613
 Transform:
   m_ObjectHideFlags: 0
@@ -1217,6 +1218,7 @@ MonoBehaviour:
   - {fileID: 1176876878810693700, guid: 9129886aee437c8409825d90ced4220d, type: 3}
   - {fileID: 3008354251110331474, guid: e448d7d56132294478859cdd950460f0, type: 3}
   - {fileID: 9121560385088561723, guid: 4949d8a27dde13244b07953052ac62e6, type: 3}
+  _poolableEnemies: []
 --- !u!4 &153395246
 Transform:
   m_ObjectHideFlags: 0
@@ -10246,6 +10248,7 @@ MonoBehaviour:
   - {fileID: 1176876878810693700, guid: 9129886aee437c8409825d90ced4220d, type: 3}
   - {fileID: 3008354251110331474, guid: e448d7d56132294478859cdd950460f0, type: 3}
   - {fileID: 9121560385088561723, guid: 4949d8a27dde13244b07953052ac62e6, type: 3}
+  _poolableEnemies: []
 --- !u!4 &1450346200
 Transform:
   m_ObjectHideFlags: 0
@@ -11066,7 +11069,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bulletPrefab: {fileID: 6954495204110518104, guid: d2e11c60e6161b54992055762204fa38,
     type: 3}
-  _polledBulletPrefab: {fileID: 0}
+  _polledBulletPrefab: {fileID: 8661025685822461750, guid: fc00e9db5dc5edf48a1c1cd1afa6d194,
+    type: 3}
   _shootPoint: {fileID: 848299796}
   _delay: 0.2
   _bulletSpeed: 13
@@ -12309,6 +12313,11 @@ MonoBehaviour:
   - {fileID: 1176876878810693700, guid: 9129886aee437c8409825d90ced4220d, type: 3}
   - {fileID: 3008354251110331474, guid: e448d7d56132294478859cdd950460f0, type: 3}
   - {fileID: 9121560385088561723, guid: 4949d8a27dde13244b07953052ac62e6, type: 3}
+  _poolableEnemies:
+  - {fileID: 4670098858501847825, guid: f06638ab80ae49e4bae6c15091378c1f, type: 3}
+  - {fileID: 547314404331093438, guid: 9129886aee437c8409825d90ced4220d, type: 3}
+  - {fileID: 4499864056555735464, guid: e448d7d56132294478859cdd950460f0, type: 3}
+  - {fileID: 7591699064765325249, guid: 4949d8a27dde13244b07953052ac62e6, type: 3}
 --- !u!4 &1805815247
 Transform:
   m_ObjectHideFlags: 0

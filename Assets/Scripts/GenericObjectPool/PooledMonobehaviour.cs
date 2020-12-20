@@ -29,6 +29,17 @@ public class PooledMonobehaviour : MonoBehaviour
         return pooledObject;
     }
 
+    public T Get<T>(Vector3 relativePosition, Quaternion relativeRotation) where T : PooledMonobehaviour
+    {
+        var pooledObject = Get<T>(true);
+
+        pooledObject.transform.localPosition = relativePosition;
+        pooledObject.transform.localRotation = relativeRotation;
+
+        return pooledObject;
+    }
+
+
     public T Get<T>(Transform parent, bool resetTransform = false) where T : PooledMonobehaviour
     {
         var pooledObject = Get<T>(true);
