@@ -1,7 +1,7 @@
 # 3D-Shooter
 # ![Screenshot](Screenshot_1.jpg)
 # Increase in performance by removing memory leakage in bullet pool system : 120 FPS from 30-40 FPS
- ![Increase in performance by removing memory leakage in bullet pool system](120_FPS.jpg)
+# ![Increase in performance by removing memory leakage in bullet pool system](120_FPS.jpg)
 # Unity Version : 2019.4.15f1 LTS
 # Assets Used
 1. [Basic Motions FREE Pack](https://assetstore.unity.com/packages/3d/animations/basic-motions-free-pack-154271)
