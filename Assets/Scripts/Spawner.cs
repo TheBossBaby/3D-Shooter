@@ -21,8 +21,8 @@ public class Spawner : MonoBehaviour
         _nextSpwanTime = Time.time + _delay;
         Transform spwanPoint = GetSpawnPoint();
         //Enemy enemy = GetEnemy();
-        PoolableEnemy poolableEnemy = GetPoolableEnemy();
-        var pe = poolableEnemy.Get<PoolableEnemy>(spwanPoint.position, spwanPoint.rotation);
+        PoolableEnemy poolableEnemyPrefab = GetPoolableEnemy();
+        var pe = poolableEnemyPrefab.Get<PoolableEnemy>(spwanPoint.position, spwanPoint.rotation);
         //var e = GetEnemy(enemy, spwanPoint);
         //e.transform.position = spwanPoint.position;
         //e.transform.rotation = spwanPoint.rotation;

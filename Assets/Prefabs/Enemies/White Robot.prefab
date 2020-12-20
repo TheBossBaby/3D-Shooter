@@ -2356,7 +2356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d30c383993eadec4da25a8e7241778d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialPoolSize: 10
+  initialPoolSize: 5
   _hitPrefab: {fileID: 1779838342869933408, guid: 78d13a1a7cdfbac42b32c006e088e15a,
     type: 3}
   _explosionPrefab: {fileID: 3127518039995960191, guid: a01f0a98f04bf7e47a0940b8319b0c45,

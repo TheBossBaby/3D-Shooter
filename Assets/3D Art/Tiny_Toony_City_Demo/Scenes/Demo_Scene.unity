@@ -177,7 +177,7 @@ GameObject:
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &12132612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +201,11 @@ MonoBehaviour:
   - {fileID: 1176876878810693700, guid: 9129886aee437c8409825d90ced4220d, type: 3}
   - {fileID: 3008354251110331474, guid: e448d7d56132294478859cdd950460f0, type: 3}
   - {fileID: 9121560385088561723, guid: 4949d8a27dde13244b07953052ac62e6, type: 3}
-  _poolableEnemies: []
+  _poolableEnemies:
+  - {fileID: 4670098858501847825, guid: f06638ab80ae49e4bae6c15091378c1f, type: 3}
+  - {fileID: 547314404331093438, guid: 9129886aee437c8409825d90ced4220d, type: 3}
+  - {fileID: 4499864056555735464, guid: e448d7d56132294478859cdd950460f0, type: 3}
+  - {fileID: 7591699064765325249, guid: 4949d8a27dde13244b07953052ac62e6, type: 3}
 --- !u!4 &12132613
 Transform:
   m_ObjectHideFlags: 0
@@ -943,36 +947,6 @@ Transform:
   m_Father: {fileID: 1217366403}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &120149638
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 120149639}
-  m_Layer: 0
-  m_Name: Spwan Point (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &120149639
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120149638}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.08, y: 0, z: 2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1450346200}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &121439585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,36 +1103,6 @@ Transform:
   m_Father: {fileID: 1217366403}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &149612156
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 149612157}
-  m_Layer: 0
-  m_Name: 'Spwan Point '
-  m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &149612157
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149612156}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.11, y: 0, z: 3.14}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1450346200}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &151551365 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2201808274985134742, guid: 3c7d5dece75cf9845ad850601668e7d8,
@@ -1195,7 +1139,7 @@ GameObject:
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &153395245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1218,7 +1162,11 @@ MonoBehaviour:
   - {fileID: 1176876878810693700, guid: 9129886aee437c8409825d90ced4220d, type: 3}
   - {fileID: 3008354251110331474, guid: e448d7d56132294478859cdd950460f0, type: 3}
   - {fileID: 9121560385088561723, guid: 4949d8a27dde13244b07953052ac62e6, type: 3}
-  _poolableEnemies: []
+  _poolableEnemies:
+  - {fileID: 4670098858501847825, guid: f06638ab80ae49e4bae6c15091378c1f, type: 3}
+  - {fileID: 547314404331093438, guid: 9129886aee437c8409825d90ced4220d, type: 3}
+  - {fileID: 4499864056555735464, guid: e448d7d56132294478859cdd950460f0, type: 3}
+  - {fileID: 7591699064765325249, guid: 4949d8a27dde13244b07953052ac62e6, type: 3}
 --- !u!4 &153395246
 Transform:
   m_ObjectHideFlags: 0
@@ -6196,36 +6144,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7365589915577802473, guid: f98d0f97a920741499853e1e86a88ced, type: 3}
---- !u!1 &896307467
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 896307468}
-  m_Layer: 0
-  m_Name: Spwan Point (5)
-  m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &896307468
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 896307467}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.11, y: 0, z: -0.97}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1450346200}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &902921526 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6399157241168359602, guid: 3c7d5dece75cf9845ad850601668e7d8,
@@ -6905,36 +6823,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1335602182}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &999745867
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 999745868}
-  m_Layer: 0
-  m_Name: Spwan Point (4)
-  m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &999745868
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999745867}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.11, y: 0, z: -3.03}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1450346200}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1002686856 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6414930879586238469, guid: 3c7d5dece75cf9845ad850601668e7d8,
@@ -8493,36 +8381,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3173644202250210820, guid: bdd8b59fd28ade14d951aeeb4c9644d0, type: 3}
---- !u!1 &1241587542
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1241587543}
-  m_Layer: 0
-  m_Name: Spwan Point (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1241587543
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1241587542}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.03, y: 0, z: -2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1450346200}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1245713982
 GameObject:
   m_ObjectHideFlags: 0
@@ -8839,7 +8697,7 @@ RectTransform:
   m_Children:
   - {fileID: 1623813709}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8886,36 +8744,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3173644202250210820, guid: bdd8b59fd28ade14d951aeeb4c9644d0, type: 3}
---- !u!1 &1289718775
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1289718776}
-  m_Layer: 0
-  m_Name: Spwan Point (6)
-  m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1289718776
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289718775}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.11, y: 0, z: 1.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1450346200}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1293524566
 GameObject:
   m_ObjectHideFlags: 0
@@ -9677,7 +9505,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1388283115 stripped
 GameObject:
@@ -10210,66 +10038,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 837252754260436049, guid: 3c7d5dece75cf9845ad850601668e7d8, type: 3}
---- !u!1 &1450346198
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1450346200}
-  - component: {fileID: 1450346199}
-  m_Layer: 0
-  m_Name: Spawner (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1450346199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450346198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d1b2734f092bae4ca480950e81ee9be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _delay: 5
-  _spwanPoints:
-  - {fileID: 149612157}
-  - {fileID: 120149639}
-  _enemies:
-  - {fileID: 6269836342013691627, guid: f06638ab80ae49e4bae6c15091378c1f, type: 3}
-  - {fileID: 1176876878810693700, guid: 9129886aee437c8409825d90ced4220d, type: 3}
-  - {fileID: 3008354251110331474, guid: e448d7d56132294478859cdd950460f0, type: 3}
-  - {fileID: 9121560385088561723, guid: 4949d8a27dde13244b07953052ac62e6, type: 3}
-  _poolableEnemies: []
---- !u!4 &1450346200
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450346198}
-  m_LocalRotation: {x: -0, y: -0.70710737, z: -0, w: 0.70710623}
-  m_LocalPosition: {x: -18.02, y: 1.31, z: -50.11}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 149612157}
-  - {fileID: 120149639}
-  - {fileID: 2140246013}
-  - {fileID: 1241587543}
-  - {fileID: 999745868}
-  - {fileID: 896307468}
-  - {fileID: 1289718776}
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
 --- !u!1 &1450566597
 GameObject:
   m_ObjectHideFlags: 0
@@ -11019,6 +10787,7 @@ GameObject:
   - component: {fileID: 1616661534}
   - component: {fileID: 1616661536}
   - component: {fileID: 1616661535}
+  - component: {fileID: 1616661537}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -11104,6 +10873,21 @@ CapsuleCollider:
   m_Height: 1.7575111
   m_Direction: 1
   m_Center: {x: 0.013243675, y: 0.9879422, z: 0}
+--- !u!114 &1616661537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616661531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc47830e1817cc1459846a29cba81206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 8661025685822461750, guid: fc00e9db5dc5edf48a1c1cd1afa6d194, type: 3}
+  initialPoolSize: 10
 --- !u!1 &1623813708
 GameObject:
   m_ObjectHideFlags: 0
@@ -14458,36 +14242,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &2140246012
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2140246013}
-  m_Layer: 0
-  m_Name: Spwan Point (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2140246013
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2140246012}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1450346200}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2141160026
 GameObject:
   m_ObjectHideFlags: 0
