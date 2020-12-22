@@ -36,7 +36,7 @@ public class PoolableBullet : PooledMonobehaviour
     private void OnCollisionEnter(Collision collision)
     {
         gameObject.SetActive(false);
-        var enemy = collision.gameObject.GetComponent<Enemy>();
+        var enemy = collision.gameObject.GetComponent<PoolableEnemy>();
         if (enemy)
         {
             enemy.TakeDamage(collision.contacts[0].point);

@@ -14,7 +14,7 @@ public class PoolableEnemy : PooledMonobehaviour
     [SerializeField] AudioClip _explosionSfx;
     [SerializeField] int _health = 3;
     [SerializeField] int _rewardPoint;
-    private Player _player;
+    [SerializeField] private Player _player;
     private NavMeshAgent _navMeshAgent;
     private int _currentHealth;
     private AudioSource _audioSource;

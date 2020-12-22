@@ -2170,7 +2170,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 10d4075bfe2e0c54b91345e0d874f354, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -2363,8 +2363,9 @@ MonoBehaviour:
     type: 3}
   _hitSfx: {fileID: 8300000, guid: 72127805eb2bc4e7fbf2e02eca266cfa, type: 3}
   _explosionSfx: {fileID: 8300000, guid: 0c008ee3ee72a4362a35be25fa5de043, type: 3}
-  _health: 3
+  _health: 5
   _rewardPoint: 10
+  _player: {fileID: 0}
 --- !u!1 &9120757688701296514
 GameObject:
   m_ObjectHideFlags: 0

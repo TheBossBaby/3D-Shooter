@@ -37,7 +37,7 @@ public class Bullet : MonoBehaviour
         gameObject.SetActive(false);
         _gun.AddToPool(this);
 
-        var enemy = collision.gameObject.GetComponent<Enemy>();
+        var enemy = collision.gameObject.GetComponent<PoolableEnemy>();
         if(enemy)
         {
             enemy.TakeDamage(collision.contacts[0].point);
