@@ -1,16 +1,23 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float _speed = 1;
-    [SerializeField] private Transform _direction;
-
-    void Update()
+    private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        var enemy = hit.gameObject.GetComponent<Enemy>();
+        if (enemy)
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
 
-        Vector3 movement = new Vector3(horizontal, 0f, vertical);
-        transform.Translate(movement * Time.deltaTime * _speed, _direction);
+    private void OnCollisionEnter(Collision hit)
+    {
+        var enemy = hit.gameObject.GetComponent<Enemy>();
+        if (enemy)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }
